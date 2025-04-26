@@ -1,14 +1,14 @@
 apiVersion: v1
 Kind: Pod
 metadata:
-  name: lables-demo
-  label:
+  name: label-demo
+  labels:
     course: DevOps
-    trainer: Praveen
+    trainer: praveen
 
 spec:
   containers:
-    - name: hello-pod
+    - name: nginx-container
       image: nginx
       ports:
       - containerPort: 80
