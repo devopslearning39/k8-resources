@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: label-demo
+  name: label-demo-jella-praveen
   namespace: roboshop
   labels:
     course: DevOps
