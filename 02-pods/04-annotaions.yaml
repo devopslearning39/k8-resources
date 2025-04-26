@@ -1,13 +1,26 @@
 apiVersion: v1
-kind: Pod
+Kind: Pod
 metadata:
-  name: annotations-demo
-  namespace: roboshop
+  name: annotaions-demo
+
   annotations:
-    imageregistry: "https://hub.docker.com/"
+    course: "DevOps with AWS"
+    trainer: "Praveen Kumar"
+    com.roboshop.training.duration: "120 hours"
+    jenkins.url: "https://jenkins.com/roboshop/catalogue#45"
+
+  labels:
+    course: DevOpswithAWS
+    trainer: PraveenKumar
+
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
+    - name: hello-pod
+      image: nginx
+      ports:
+      - containerPort: 80
+
+
+# annotations- More flexible (support special characters, dots, URLs, etc.) and Used for metadata that tools use (e.g., monitoring, external integrations).
+
+# labels- Used for selectors, organizing, filtering (e.g., kubectl get pods -l trainer=PraveenKumar) and Can't have special characters like dots or slashes.
