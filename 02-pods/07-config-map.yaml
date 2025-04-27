@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: demonstration-of-configmap
 data:
-  cloud:aws
-  automation:devops
-  trainer:praveen
-  duration:four months
+  cloud: aws
+  automation: devops
+  trainer: praveen
+  duration: four-months
