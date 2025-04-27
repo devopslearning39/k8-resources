@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: config-pod
+
+spec:
+  containers:
+  - name: config-pod-container
+    image: nginx
+    env:
+    - name: boomingCloudIs-
+      valueFrom:
+        configMapKeyRef:
+        name: demonstration-of-configmap
+        key: cloud
