@@ -8,8 +8,14 @@ spec:
   - name: config-pod-container
     image: nginx
     env:
-    - name: boomingCloudIs-
+    - name: boomingCloudIs
       valueFrom:
         configMapKeyRef:
           name: demonstration-of-configmap
           key: cloud
+
+    - name: AutomationUsing
+      valueFrom:
+        configMapKeyRef:
+          name: demonstration-of-configmap
+          key: automation
