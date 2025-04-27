@@ -11,5 +11,5 @@ spec:
     - name: boomingCloudIs-
       valueFrom:
         configMapKeyRef:
-        name: demonstration-of-configmap
-        key: cloud
+          name: demonstration-of-configmap
+          key: cloud
