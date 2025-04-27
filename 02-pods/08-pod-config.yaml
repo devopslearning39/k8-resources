@@ -7,7 +7,7 @@ spec:
   containers:
   - name: config-pod-container
     image: nginx
-    env:
+    env:    # fetching required variables using method-1 (Lengthy menthod)
     - name: boomingCloudIs
       valueFrom:
         configMapKeyRef:
@@ -19,3 +19,19 @@ spec:
         configMapKeyRef:
           name: demonstration-of-configmap
           key: automation
+
+
+----
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod-2
+
+spec:
+  containers:
+  - name: config-pod-container2
+    image: nginx
+    envFrom:    # fetching all the variables using method-2 (Simple menthod)
+      - configMapRef:
+          name: myconfigmap
