@@ -11,7 +11,6 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80   #here with this line port will not be opened, just for information
-
 ---
 apiVersion: v1
 kind: Service
@@ -24,4 +23,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80 #service-port
-    targetPort: 8080 #container-port
+    targetPort: 80 #container-port
