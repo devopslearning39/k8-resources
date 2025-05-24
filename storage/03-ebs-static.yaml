@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-0b7890ceb14e009c6  # replace this with your ebs volume id
+    volumeHandle: vol-04f0012e6d6b05c45  # replace this with your ebs volume id
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
