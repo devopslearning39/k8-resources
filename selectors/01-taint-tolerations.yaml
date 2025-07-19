@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: taint-tolerations
 spec:
-  # list of containers
+  # list of containers 
   containers:
   - name: hello-pod
     image: nginx
