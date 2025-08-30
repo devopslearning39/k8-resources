@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod
+  namespace: sandbox
+spec:
+  containers:
+  - name: configmap-container
+    image: nginx:latest
+    env:
+    - name: CloudPlatform
+      valueFrom:
+        configMapKeyRef:
+          name: configmap-pod
+          key: cloud
