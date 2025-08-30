@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-pod
+  namespace: sandbox
+data:
+  cloud: aws
+  infratool: terraform
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
