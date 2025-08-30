@@ -8,6 +8,7 @@ metadata:
     course: "AWS with DevOps"
     url: "www.joindevops/trainer"
 
+spec:
 containers:
 - name: nginx-container
   image: nginx:latest
