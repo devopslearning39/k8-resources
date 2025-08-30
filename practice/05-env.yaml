@@ -9,8 +9,8 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
-  env:
-  - name: DEMO_GREETING
-    value: "hello from the environment"
-  - name: DEMO_FAREWELL
-    value: "such a sweet sorrow"
+    env:
+    - name: DEMO_GREETING
+      value: "hello from the environment"
+    - name: DEMO_FAREWELL
+      value: "such a sweet sorrow"
