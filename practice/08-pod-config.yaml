@@ -13,3 +13,11 @@ spec:
         configMapKeyRef:
           name: configmap-pod
           key: cloud
+
+    - name: InfraProvidingUsing
+      valueFrom:
+        configMapKeyRef:
+          name: configmap-pod
+          key: infratool
+      
+      
