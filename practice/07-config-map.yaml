@@ -6,7 +6,3 @@ metadata:
 data:
   cloud: aws
   infratool: terraform
-spec:
-  containers:
-  - name: nginx-container
-    image: nginx:latest
