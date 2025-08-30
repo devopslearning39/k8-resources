@@ -5,7 +5,7 @@ metadata:
   namespace: sandbox
 spec:
   containers:
-    name: nginx-container
+  - name: nginx-container
     image: nginx:latest
     ports:
-      - containerPort: 80
+    - containerPort: 80
